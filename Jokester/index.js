@@ -1,8 +1,10 @@
 const jokes = require("give-me-a-joke");
 const colors = require('colors');
-// console.log(colors);
-
+const cowsay = require('cowsay');
+console.log(cowsay);
 
 jokes.getRandomDadJoke(function (joke ) {
-    console.log(joke.rainbow);
+    console.log(cowsay.say( {
+        text: joke.rainbow,
+    }));
 })
